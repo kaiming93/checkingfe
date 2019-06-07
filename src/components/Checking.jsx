@@ -78,7 +78,7 @@ class Checking extends Component {
         <input value={this.state.lastName} onChange={this.handlelastName} type="text" id="data_3" name="data_3" style={{width: "100%"}} className="form-control"/>
         </div>
         </div><div style={{paddingBottom: "18px"}}>Phone<span style={{color: "red"}}> *</span><br/>
-        <input value={this.state.phone} onChange={this.handlephone} type="text" id="data_4" name="data_4" style={{width : "450px"}} className="form-control"/>
+        <input maxLength={11} value={this.state.phone} onChange={this.handlephone} type="text" id="data_4" name="data_4" style={{width : "450px"}} className="form-control"/>
         </div>
         <div style={{paddingBottom: "18px"}}>Email<span style={{color: "red"}}> *</span><br/>
         <input value={this.state.email} onChange={this.handleemail} type="text" id="data_5" name="data_5" style={{width : "450px"}} className="form-control"/>
