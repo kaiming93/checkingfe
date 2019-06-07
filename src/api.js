@@ -7,4 +7,15 @@ export const getUsers = () => {
 
 };
 
+export const getLists = () => {
+    return axios.get(`${API_URL}/lists`).then(({data}) => data.lists);
+
+};
+
+export const postUser = async (object, firstName, lastName, phone, email ) => {
+    return axios
+      .post(`${API_URL}/users`, { object, firstName, lastName, phone, email })
+      .then(({ data }) => data.users);
+  };
+
 
